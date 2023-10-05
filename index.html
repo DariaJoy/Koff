@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet">
+
+    <link rel="preload" href="/fonts/open-sans-v36-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/open-sans-v36-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-v13-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мебельный маркет Koff</title>
@@ -26,8 +25,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path
                 d="M7.66671 13.9999C11.1645 13.9999 14 11.1644 14 7.66659C14 4.16878 11.1645 1.33325 7.66671 1.33325C4.1689 1.33325 1.33337 4.16878 1.33337 7.66659C1.33337 11.1644 4.1689 13.9999 7.66671 13.9999Z"
-                stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M14.6667 14.6666L13.3334 13.3333" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14.6667 14.6666L13.3334 13.3333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
             </svg>
           </button>
@@ -127,15 +126,17 @@
           <ul class="goods__list">
             <li class="goods__item">
               <article class="goods__card card">
-                <a class="card__link" href="/product">
+                <a class="card__link card__link_img" href="/product">
                   <img class="card__image" src="/img/photo.jpg" alt="Кресло с подлокотниками">
                 </a>
-                <h3 class="card__title">
-                  <a href="/product" class="card__link">
-                    Кресло с подлокотниками
-                  </a>
-                </h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                <div class="card__info">
+                  <h3 class="card__title">
+                    <a href="/product" class="card__link">
+                      Кресло с подлокотниками
+                    </a>
+                  </h3>
+                  <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                </div>
                 <button class="card__btn">В корзину</button>
                 <button class="card__favorite">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -148,15 +149,17 @@
             </li>
             <li class="goods__item">
               <article class="goods__card card">
-                <a class="card__link" href="/product">
+                <a class="card__link card__link_img" href="/product">
                   <img class="card__image" src="/img/photo.jpg" alt="Кресло с подлокотниками">
                 </a>
-                <h3 class="card__title">
-                  <a href="/product" class="card__link">
-                    Кресло с подлокотниками
-                  </a>
-                </h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                <div class="card__info">
+                  <h3 class="card__title">
+                    <a href="/product" class="card__link">
+                      Кресло с подлокотниками
+                    </a>
+                  </h3>
+                  <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                </div>
                 <button class="card__btn">В корзину</button>
                 <button class="card__favorite">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -169,15 +172,17 @@
             </li>
             <li class="goods__item">
               <article class="goods__card card">
-                <a class="card__link" href="/product">
+                <a class="card__link card__link_img" href="/product">
                   <img class="card__image" src="/img/photo.jpg" alt="Кресло с подлокотниками">
                 </a>
-                <h3 class="card__title">
-                  <a href="/product" class="card__link">
-                    Кресло с подлокотниками
-                  </a>
-                </h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                <div class="card__info">
+                  <h3 class="card__title">
+                    <a href="/product" class="card__link">
+                      Кресло с подлокотниками
+                    </a>
+                  </h3>
+                  <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                </div>
                 <button class="card__btn">В корзину</button>
                 <button class="card__favorite">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -190,15 +195,19 @@
             </li>
             <li class="goods__item">
               <article class="goods__card card">
-                <a class="card__link" href="/product">
+                <a class="card__link card__link_img" href="/product">
                   <img class="card__image" src="/img/photo.jpg" alt="Кресло с подлокотниками">
                 </a>
-                <h3 class="card__title">
-                  <a href="/product" class="card__link">
-                    Кресло с подлокотниками
-                  </a>
-                </h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                
+                <div class="card__info">
+                  <h3 class="card__title">
+                    <a href="/product" class="card__link">
+                      Кресло с подлокотниками
+                    </a>
+                  </h3>
+                  <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                </div>
+                
                 <button class="card__btn">В корзину</button>
                 <button class="card__favorite">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -211,15 +220,17 @@
             </li>
             <li class="goods__item">
               <article class="goods__card card">
-                <a class="card__link" href="/product">
+                <a class="card__link card__link_img" href="/product">
                   <img class="card__image" src="/img/photo.jpg" alt="Кресло с подлокотниками">
                 </a>
-                <h3 class="card__title">
-                  <a href="/product" class="card__link">
-                    Кресло с подлокотниками
-                  </a>
-                </h3>
-                <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                <div class="card__info">
+                  <h3 class="card__title">
+                    <a href="/product" class="card__link">
+                      Кресло с подлокотниками
+                    </a>
+                  </h3>
+                  <p class="card__price">5&nbsp;000&nbsp;₽</p>
+                </div>
                 <button class="card__btn">В корзину</button>
                 <button class="card__favorite">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -235,37 +246,37 @@
       </section>
 
       <section class="product" hidden>
-        <div class="container">
+        <div class="container product__container">
           <h2 class="product__title">Кресло с подлокотниками</h2>
           <div class="product__picture">
             <div class="swiper product__slider-main">
               <div class="swiper-wrapper product__main-list">
                 <div class="swiper-slide product__slide">
-                  <img src="/img/photo.jpg" />
+                  <img class="product__image" src="/img/photo.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-2.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-3.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-4.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-5.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-6.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-7.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-8.jpg" />
                 </div>
                 <div class="swiper-slide product__slide">
-                  <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                  <img class="product__image" src="https://swiperjs.com/demos/images/nature-10.jpg" />
                 </div>
               </div>
               <button class="product__arrow product__arrow_prev">
@@ -441,22 +452,22 @@
 
               <fieldset class="form-order__fieldset form-order__fieldset_radio">
                 <legend class="form-order__legend">Доставка</legend>
-                <lable class="form-order-lable radio">
+                <lable class="form-order__lable radio">
                   <input type="radio" class="radio__input" name="deliveryType" value="delivery">Доставка
                 </lable>
 
-                <lable class="form-order-lable radio">
+                <lable class="form-order__lable radio">
                   <input type="radio" class="radio__input" name="deliveryType" value="pickup">Самовывоз
                 </lable>
               </fieldset>
 
               <fieldset class="form-order__fieldset form-order__fieldset_radio">
                 <legend class="form-order__legend">Оплата</legend>
-                <lable class="form-order-lable radio">
+                <lable class="form-order__lable radio">
                   <input type="radio" class="radio__input" name="paymentType" value="card">Картой при получении
                 </lable>
               
-                <lable class="form-order-lable radio">
+                <lable class="form-order__lable radio">
                   <input type="radio" class="radio__input" name="paymentType" value="cash">Наличными при получении
                 </lable>
               </fieldset>
